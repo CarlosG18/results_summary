@@ -2,6 +2,8 @@
 export default {
   content: [
       './src/App.jsx',
+      './src/Rating.jsx',
+      './src/Button.jsx',
     ],
   theme: {
     extend: {

@@ -1,34 +1,44 @@
-import { useState } from 'react'
+import Rating from './Rating.jsx'
+import Button from './Button.jsx'
+
+let titles = [
+  'Reaction',
+  'Memory',
+  'Verbal',
+  'Visual',
+]
+
+let values = [80,92,61,72]
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <p className="bg-green-800 text-Lightred font-custom">Your Result</p>
+    <div className="flex items-center justify-center font-custom h-screen">
+    
+      <div className="rounded-md shadow-xl bg-white flex">
       
-      76
-      of 100
-
-      Great
-      You scored higher than 65% of the people who have taken these tests.
-  
-      Summary
-
-      Reaction
-      80 / 100
-
-      Memory
-      92 / 100
-
-      Verbal
-      61 / 100
-
-      Visual
-      72 / 100
-
-      Continue
-    </>
+        <div className="flex flex-col justify-around items-center bg-Cobaltblue rounded-md w-64 p-6 text-white">
+          <p>Your Result</p>
+          <div className="flex flex-col items-center justify-center p-10 bg-black rounded-full">
+            <p>76</p>
+            <p>of 100</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <p>Great</p>
+            <p>You scored higher than 65% of the people who have taken these tests.</p>
+          </div>
+        </div>
+        
+        <div className="p-6">
+          <p>Summary</p>
+          <Rating title={titles[0]} value={values[0]} bg={"bg-Lightred"} />
+          <Rating title={titles[1]} value={values[1]} bg={"bg-Orangeyellow"} />
+          <Rating title={titles[2]} value={values[2]} bg={"bg-Greenteal"} />
+          <Rating title={titles[3]} value={values[3]} bg={"bg-Cobaltblue"} />
+          <Button value={"Continue"} />
+        </div>
+        
+      </div>
+    </div>
   )
 }
 
