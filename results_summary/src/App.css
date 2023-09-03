@@ -1,0 +1,7 @@
+.linear-gradient{
+  background: linear-gradient(hsl(252, 100%, 67%) 3%,hsl(241, 81%, 54%));
+}
+
+.linear-gradient-inverse{
+  background: linear-gradient(hsla(256, 72%, 46%, 1),hsl(241, 81%, 54%));
+}
