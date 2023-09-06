@@ -21,9 +21,9 @@ export default {
         Lightlavender: 'hsl(241, 100%, 89%)',
         Darkgrayblue: 'hsl(224, 30%, 27%)',
         red_light: 'hsla(0, 100%, 67%, 0.05)',
-        yellow_light: 'hsla(39, 100%, 56%, 0.05)',
-        green_light: 'hsla(166, 100%, 37%, 0.05)',
-        violet_light: 'hsla(241, 100%, 89%, 0.05)',
+        yellow_light: 'hsla(39, 100%, 56%, 0.1)',
+        green_light: 'hsla(166, 100%, 37%, 0.1)',
+        violet_light: 'hsla(241, 100%, 89%, 0.1)',
       },
       fontFamily: {
         custom: ['Hanken Grotesk', 'sans-serif'],

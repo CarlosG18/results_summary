@@ -1,6 +1,6 @@
 function Rating({title, value, bg, img, color}){
   return(
-    <div className={`flex justify-between w-64 rounded-xl p-2 ${bg}`}>
+    <div className={`flex justify-between w-64 rounded-xl p-4 ${bg}`}>
       <div className="flex">
         <img className="mr-3" src={img} />
         <h1 className={color}>{title}</h1>
